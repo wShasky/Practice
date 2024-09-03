@@ -1,0 +1,20 @@
+using System;
+public class HelloWorld
+{    
+public static void Main(string[] args) 
+{
+	int x = 12;
+	int y = 20;
+	Console.WriteLine ("x is: " + x + "   y is: " + y);
+	y = y + 5;
+	doSomething (x, y);
+	x =  x + y;
+	Console.WriteLine ("x is: " + x + "   y is: " + y);
+}
+public static void doSomething (int n, int m) 
+{
+	n =  m  %  n;
+	m = n + m;
+	Console.WriteLine ("n is:  " + n + "  m is: " + m);
+}
+}
